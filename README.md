@@ -32,7 +32,7 @@ namespace CosmosDbMongoDbAPITriggeredFunctionApp
         {
             try
             {
-                var docObject = JsonConvert.DeserializeObject<CosmosDbCustomTriggerBinding.Model.Document>(document);
+                var docObject = JsonConvert.DeserializeObject<CosmosChangeStreamTriggerBinding.Model.Document>(document);
             }
             catch (Exception ex)
             {
