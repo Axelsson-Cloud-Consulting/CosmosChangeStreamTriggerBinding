@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <Authors>Kristoffer Axelsson</Authors>
+    <Company>Axelsson Cloud Consulting AB</Company>
+    <Copyright>© 2021 Axelsson Cloud Consulting AB</Copyright>
+    <Description>Azure Function trigger binding that listens to Azure Cosmos DB API for MongoDB's change stream API and triggers an execution on insert, update or replace events. (Requires Azure Cosmos DB's API for MongoDB ver. 3.6+)</Description>
+    <PackageTags>azure function cosmos cosmosdb trigger mongodbapi mongo mongodb change stream binding</PackageTags>
+    <NeutralLanguage>en-GB</NeutralLanguage>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Azure.WebJobs" Version="3.0.27" />
+    <PackageReference Include="MongoDB.Driver" Version="2.12.2" />
+  </ItemGroup>
+
+</Project>
